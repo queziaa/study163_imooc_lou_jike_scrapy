@@ -8,9 +8,7 @@ post = client['imooc']['data_www']
 
 num = 0
 
-urlsss = [{'courseId':36},{'courseId':85}]
-# for temp  in post.find():
-for temp in urlsss:
+for temp  in post.find():
     try:
         post_text = requests.get(url+str(temp['courseId']),timeout=2)
     except:
